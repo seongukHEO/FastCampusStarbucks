@@ -1,3 +1,5 @@
+/* 공통 */
+
 body{
   color: #333333;
   font-weight: 400;
@@ -14,22 +16,27 @@ body{
 
 }
 
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
 img{
   display: block;
 }
 
+/* 상단 헤더 부분 */
 header{
   background-color: f6f5f0;
   border-bottom: 1px solid #c8c8c8;
 }
 
-header .inner{
-  width: 1000px;
+header > .inner{
   height: 120px;
-  margin: 0 auto;
-  position: relative;
 }
 
+/* 로고 */
 header .logo{
   height: 75px;
   position: absolute;
@@ -39,6 +46,7 @@ header .logo{
   margin: auto;
 }
 
+/* 최상단 서브 메뉴 */
 header .sub-menu{
   display: flex;
   position: absolute;
@@ -127,3 +135,90 @@ header .sub-menu{
 .sub-menu .search.focused .material-icons{
   opacity: 0;
 }
+
+/* 드롭다운 메뉴 */
+
+.main-menu{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+}
+
+.main-menu .item{
+  
+}
+
+.main-menu .item .item__name{
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+
+.main-menu .item .item__contents{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+
+.main-menu .item:hover .item__contents{
+  display: block;
+}
+
+.main-menu .item .item__contents .contents__menu{
+  background-color: #2c2a29;
+  
+}
+
+.main-menu .item .item__contents .contents__menu > ul{
+  display: flex;
+  padding: 20px 0;
+
+}
+
+.main-menu .item .item__contents .contents__menu > ul >li{
+  width: 220px;
+}
+
+.main-menu .item .item__contents .contents__menu > ul li h4{
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+.main-menu .item .item__contents .contents__menu > ul li ul li{
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+} 
+
+.main-menu .item .item__contents .contents__menu > ul li ul li:hover{
+  color: #669900;
+}
+
+.main-menu .item .item__contents .contents__texture{
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url("../images/main_menu_pattern.jpg");
+}
+
+.main-menu .item .item__contents .contents__texture h4{
+  color: #999;
+  font-weight: 700;
+}
+
+.main-menu .item .item__contents .contents__texture p{
+  color: #699900;
+  margin: 4px 0 14px;
+}
+
