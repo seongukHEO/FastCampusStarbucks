@@ -7,6 +7,11 @@ body{
         font-weight: 400;
         font-style: normal;
       } 
+
+  a{
+    text-decoration: none;
+  }
+
 }
 
 img{
@@ -34,3 +39,58 @@ header .logo{
   margin: auto;
 }
 
+header .sub-menu{
+  
+}
+
+.sub-menu ul.menu{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.sub-menu ul.menu li{
+  position: relative;
+}
+
+.sub-menu ul.menu li::before{
+  /* 이 부분은 상단의 br */
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.sub-menu ul.menu li:first-child::before{
+  /* 이 부분은 상단의 가로 br 첫번째꺼 없애기 */
+  display: none;
+}
+
+.sub-menu ul.menu li a{
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+
+/* hover 효과 */
+.sub-menu ul.menu li a:hover{
+  color: #000;
+}
+
+
+.sub-menu .search{
+
+}
+
+.sub-menu .search input{
+
+}
+
+.sub-menu .search .material-icons{
+
+}
