@@ -1,10 +1,36 @@
 body{
-    color: red;
-    font-size: 100px;
+  color: #333333;
+  font-weight: 400;
+  line-height: 1.4;
     .nanum-gothic-coding-regular {
         font-family: "Nanum Gothic Coding", monospace;
         font-weight: 400;
         font-style: normal;
-      }
-      
+      } 
 }
+
+img{
+  display: block;
+}
+
+header{
+  background-color: royalblue;
+}
+
+header .inner{
+  width: 1000px;
+  height: 120px;
+  background-color: orange;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .logo{
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
