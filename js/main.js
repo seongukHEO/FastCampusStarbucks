@@ -40,6 +40,15 @@ window.addEventListener('scroll' , _.throttle(
     }, 300
 ))
 
+const fadeEls = document.querySelectorAll('.visual .fade-in')
+fadeEls.forEach(function(fadeEl, index){
+    // fadeEls가 반복하면서 밑의 코드를 실행한다
+    gsap.to(fadeEl, 1, {
+        delay: (index + 1) * 0.7,
+        opacity: 1
+    })
+})
+
 
 
 

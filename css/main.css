@@ -358,3 +358,8 @@ header .badges .badge{
   bottom: 0;
   left: 275px;
 }
+
+.visual .fade-in{
+  /* 처음에 아무 이미지도 안보이게 한다 */
+  opacity: 0;
+}
