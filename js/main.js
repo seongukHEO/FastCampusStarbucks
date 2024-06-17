@@ -14,5 +14,11 @@ searchInput.addEventListener('focus', function(){
 searchInput.addEventListener('blur', function(){
     searchEl.classList.remove('focused')
     searchInput.setAttribute('placeholder', '')
+});
+
+// Badge
+const badgeEl = document.querySelector('header .badges')
+window.addEventListener('scroll' ,function(){
+    console.log('scroll!')
 })
 
