@@ -17,8 +17,29 @@ searchInput.addEventListener('blur', function(){
 });
 
 // Badge
+
+//_.throttle(함수, 시간을 추가)
 const badgeEl = document.querySelector('header .badges')
-window.addEventListener('scroll' ,function(){
-    console.log('scroll!')
-})
+window.addEventListener('scroll' , _.throttle(
+    function(){
+        console.log(window.scrollY)
+        if(window.scrollY > 500){
+            //배찌 숨기기
+            gsap.to(badgeEl, 0.6, {
+                opacity: 0,
+                display : 'none' 
+            })
+        }else{
+            //배찌 보이기
+            gsap.to(badgeEl, 0.6, {
+                opacity: 1,
+                display : 'block'
+            })
+            
+        }
+    }, 300
+))
+
+
+
 
