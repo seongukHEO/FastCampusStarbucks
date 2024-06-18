@@ -479,14 +479,32 @@ header .badges .badge{
   /* 칼크 함수 */
   width: calc(819px * 3 + 20px);
   height: 553px;
-  background-color: orange;
-  text-align: center;
-  font-size: 200px;
   position: absolute;
   top: 40px;
   left: 50%;
   margin-left: calc((819px * 3 + 20px) / -2);
 }
+
+/* 프로모션의 흐림 정도를 나타냄 */
+.notice .promotion .swiper-slide{
+  opacity: 0.5;
+  transition: opacity 1s;
+  position: relative;
+}
+
+.notice .promotion .swiper-slide-active{
+  opacity: 1;
+}
+
+.notice .promotion .swiper-slide .btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
 
 
 
