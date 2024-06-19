@@ -82,10 +82,26 @@ body{
   border-color: #FFF;
 }
 
-
-
 img{
   display: block;
+}
+
+.back-to-position{
+  opacity: 0;
+  transition: 1s;
+}
+
+.back-to-position.to-right{
+  transform: translateX(-150px);
+}
+
+.back-to-position.to-left{
+  transform: translateX(150px);
+}
+
+.show .back-to-position{
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* 상단 헤더 부분 */
