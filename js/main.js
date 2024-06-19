@@ -135,6 +135,11 @@ spyEls.forEach(function(spyEl){
     .addTo(new ScrollMagic.Controller())
 })
 
+//올해가 몇년도인지 계산
+const thisYear = document.querySelector('.this-year')
+//요소가 가지고 있는 text
+thisYear.textContent = new Date().getFullYear()
+
 
 
 
