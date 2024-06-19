@@ -94,6 +94,19 @@ promotionToggleBtn.addEventListener('click', function(){
     }
 })
 
+//에니메이션
+function floationObject(selector){
+    gsap.to(selector, 1, {
+        y: 20,
+        repeat: -1,
+        yoyo: true,
+        ease: Power1.easeInOut,
+        delay: 1,
+    })
+}
+
+floationObject('.floating')
+
 
 
 
