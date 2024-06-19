@@ -78,6 +78,22 @@ new Swiper('.promotion .swiper', {
     
 })
 
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion')
+let isHidePromotion = false
+
+promotionToggleBtn.addEventListener('click', function(){
+    isHidePromotion = !isHidePromotion
+    if(isHidePromotion){
+        //숨김 처리
+        promotionEl.classList.add('hide')
+    }else{
+        //보여짐 처리
+        promotionEl.classList.remove('hide')
+
+    }
+})
+
 
 
 
