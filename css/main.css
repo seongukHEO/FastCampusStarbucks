@@ -1,7 +1,6 @@
 /* 공통 */
 
 body{
-  height: 3000px;
   color: #333333;
   font-weight: 400;
   line-height: 1.4;
@@ -690,11 +689,100 @@ header .badges .badge{
   left: 150;
 }
 
-.youtube .floating3{
+
+.season-product{
+  background-image: url(../images/season_product_bg.jpg);
+}
+
+.season-product .inner{
+  height: 400px;
+}
+
+.season-product  .floating3{
   position: absolute;
-  bottom: -200px;
+  top: -200px;
   right: 0;
 }
+
+.season-product .text-group{
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+
+.season-product .text-group .title{
+  margin-bottom: 10px;
+  
+}
+
+.season-product .text-group .description{
+  margin-bottom: 15px;
+}
+
+.season-product .text-group .more{
+
+}
+
+.reserve-coffee{
+  background-image: url(../images/reserve_bg.jpg);
+}
+
+.reserve-coffee .inner{
+  height: 400px;
+}
+
+.reserve-coffee .reserve-logo{
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+
+.reserve-coffee .text-group{
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+
+.reserve-coffee .product{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pick-your-favorite{
+  background-image: url(../images/favorite_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* 화면이 스크롤이 되더라도 같이 움직이지 않는다 */
+  background-attachment: fixed;
+  /* 배경의 이미지를 요소에 맞춰서 출력한다 */
+  background-size: cover;
+}
+
+.pick-your-favorite .inner{
+  padding: 110px 0;
+}
+
+.pick-your-favorite .text-group{
+  margin-left: 100px;
+  display: flex;
+  width: 362px;
+
+  /* 줄바꿈 가능 */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.pick-your-favorite .text-group .title{
+  margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .description{
+  margin-bottom: 40px;
+}
+
+
+
 
 
 
